@@ -11,6 +11,7 @@ import pygame
 class PGIF(object):
     def __init__(self, path, name, extension, image_count, canvas, location, scale_to, update=True):
         """
+        This class helps user to print GIF images into canvas in pygame.
         :param path: Path of the image. Such that "media/walking_frames/"
         :type path: String
         :param name: Name of the each image. Please select all and rename it. Such that "walk"
