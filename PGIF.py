@@ -56,8 +56,8 @@ class PGIF(object):
             except:
                 print('ERROR: System could not read GIF Image(s)')
             else:
-                image = pygame.transform.scale(image, self.scale_to)
+                image = pygame.transform.smoothscale(image, self.scale_to)
                 self.canvas.blit(image, self.location)
 
         if self.update:
-            pygame.display.update()
+            pygame.display.flip()
